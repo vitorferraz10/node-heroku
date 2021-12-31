@@ -1,6 +1,6 @@
 const express = require("express");
 const { members } = require("./api/data.json");
-const { cors } = require("cors");
+const cors = require("cors");
 const { v4 } = require("uuid");
 const app = express();
 
