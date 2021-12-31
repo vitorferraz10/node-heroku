@@ -1,9 +1,11 @@
 const express = require("express");
 const { members } = require("./api/data.json");
+const { cors } = require("cors");
 const { v4 } = require("uuid");
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   return res.json(members);
